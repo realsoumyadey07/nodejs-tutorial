@@ -1,5 +1,7 @@
 import express from 'express';
 const app = express();
+import db  from './db.js';
+import Person from './models/person.js';
 
 
 app.get('/',(req, res)=>{
