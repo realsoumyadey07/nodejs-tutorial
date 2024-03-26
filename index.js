@@ -7,6 +7,8 @@ import Menu from "./models/menu.js";
 import  personRoute  from './routes/person.route.js';
 import menuRoute from './routes/menu.route.js';
 
+
+const PORT = process.env.PORT || 8000
 //middleware
 app.use(bodyParser.json());
 
@@ -22,6 +24,6 @@ app.use('/person', personRoute);
 app.use('/menu', menuRoute);
 
 
-app.listen(8000, () => {
+app.listen(PORT, () => {
   console.log("server is running on 8000");
 });

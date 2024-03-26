@@ -1,6 +1,8 @@
 import mongoose from 'mongoose';
-
-const mongoURL = 'mongodb://127.0.0.1:27017/hotels'
+//password - qctzRkw7PJ7SY37X
+import dotenv from 'dotenv';
+dotenv.config()
+const mongoURL = process.env.MONGODB_URL
 
 mongoose.connect(mongoURL)
 
