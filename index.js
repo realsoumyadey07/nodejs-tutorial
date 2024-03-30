@@ -32,7 +32,7 @@ app.get("/greencoconut", (req, res) => {
 
 app.use('/person', localAuthMiddleware, personRoute);
 
-app.use('/menu', localAuthMiddleware,menuRoute);
+app.use('/menu', menuRoute);
 
 
 app.listen(PORT, () => {
